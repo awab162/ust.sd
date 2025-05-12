@@ -1,0 +1,21 @@
+
+import React from 'react';
+import { AlignJustify } from 'lucide-react';
+
+const Header: React.FC = () => {
+  return (
+    <header className="bg-white shadow">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <div className="flex items-center">
+          <img src="/placeholder.svg" alt="University Logo" className="h-8 w-8 mr-2" />
+          <button className="rounded-md bg-blue-600 text-white px-3 py-1 text-sm">Contact Us</button>
+        </div>
+        <button className="p-2">
+          <AlignJustify className="h-5 w-5" />
+        </button>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
