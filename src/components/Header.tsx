@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AlignJustify } from 'lucide-react';
+import NavigationSidebar from './NavigationSidebar';
 
 const Header: React.FC = () => {
   return (
@@ -10,9 +10,7 @@ const Header: React.FC = () => {
           <img src="/placeholder.svg" alt="University Logo" className="h-8 w-8 mr-2" />
           <button className="rounded-md bg-blue-600 text-white px-3 py-1 text-sm">Contact Us</button>
         </div>
-        <button className="p-2">
-          <AlignJustify className="h-5 w-5" />
-        </button>
+        <NavigationSidebar />
       </div>
     </header>
   );
