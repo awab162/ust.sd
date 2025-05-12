@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, Contact, LogIn } from 'lucide-react';
+import { Home, Contact, LogIn, Menu } from 'lucide-react';
 import { 
   Drawer,
   DrawerTrigger,
@@ -14,8 +14,8 @@ const NavigationSidebar: React.FC = () => {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant="outline" size="sm" className="flex items-center gap-2">
-          <span>Menu</span>
+        <Button variant="outline" size="sm" className="flex items-center justify-center">
+          <Menu size={20} />
         </Button>
       </DrawerTrigger>
       <DrawerContent>
