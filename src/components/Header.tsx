@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/87250a63-cdcc-4ae3-b896-00388295ab38.png" 
+            src="/lovable-uploads/15627a03-60be-4568-9308-4349823f8a3f.png" 
             alt="University Logo" 
             className="h-12 w-auto mr-2" 
           />

@@ -30,7 +30,7 @@ const NavigationSidebar: React.FC = () => {
           <Button 
             variant="ghost" 
             className="flex justify-start gap-2 w-full"
-            onClick={() => window.location.href = 'https://acs.ust.edu.sd/'}
+            onClick={() => window.open('https://acs.ust.edu.sd/', '_blank', 'noopener,noreferrer')}
           >
             <Home size={18} />
             <span>Home</span>
@@ -38,7 +38,7 @@ const NavigationSidebar: React.FC = () => {
           <Button 
             variant="ghost" 
             className="flex justify-start gap-2 w-full"
-            onClick={() => window.location.href = 'https://acs.ust.edu.sd/contactus'}
+            onClick={() => window.open('https://acs.ust.edu.sd/contactus', '_blank', 'noopener,noreferrer')}
           >
             <Contact size={18} />
             <span>Contact Us</span>
@@ -46,7 +46,7 @@ const NavigationSidebar: React.FC = () => {
           <Button 
             variant="ghost" 
             className="flex justify-start gap-2 w-full"
-            onClick={() => window.location.href = 'https://acs.ust.edu.sd/web/login'}
+            onClick={() => window.open('https://acs.ust.edu.sd/web/login', '_blank', 'noopener,noreferrer')}
           >
             <LogIn size={18} />
             <span>Sign In</span>
