@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, Contact, LogIn, Menu } from 'lucide-react';
+import { Home, Contact, LogIn } from 'lucide-react';
 import { 
   Drawer,
   DrawerTrigger,
@@ -15,7 +15,11 @@ const NavigationSidebar: React.FC = () => {
     <Drawer>
       <DrawerTrigger asChild>
         <Button variant="outline" size="sm" className="flex items-center justify-center">
-          <Menu size={20} />
+          <div className="flex flex-col gap-1">
+            <div className="h-0.5 w-5 bg-current"></div>
+            <div className="h-0.5 w-5 bg-current"></div>
+            <div className="h-0.5 w-5 bg-current"></div>
+          </div>
         </Button>
       </DrawerTrigger>
       <DrawerContent>
@@ -26,7 +30,7 @@ const NavigationSidebar: React.FC = () => {
           <Button 
             variant="ghost" 
             className="flex justify-start gap-2 w-full"
-            onClick={() => window.open('https://acs.ust.edu.sd/', '_blank')}
+            onClick={() => window.location.href = 'https://acs.ust.edu.sd/'}
           >
             <Home size={18} />
             <span>Home</span>
@@ -34,7 +38,7 @@ const NavigationSidebar: React.FC = () => {
           <Button 
             variant="ghost" 
             className="flex justify-start gap-2 w-full"
-            onClick={() => window.open('https://acs.ust.edu.sd/contactus', '_blank')}
+            onClick={() => window.location.href = 'https://acs.ust.edu.sd/contactus'}
           >
             <Contact size={18} />
             <span>Contact Us</span>
@@ -42,7 +46,7 @@ const NavigationSidebar: React.FC = () => {
           <Button 
             variant="ghost" 
             className="flex justify-start gap-2 w-full"
-            onClick={() => window.open('https://acs.ust.edu.sd/web/login', '_blank')}
+            onClick={() => window.location.href = 'https://acs.ust.edu.sd/web/login'}
           >
             <LogIn size={18} />
             <span>Sign In</span>

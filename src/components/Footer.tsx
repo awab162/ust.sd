@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 py-6 text-sm text-gray-300">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p>Copyright © University of Science and Technology</p>
-            <p>Powered by <span className="font-bold">UST</span> - Create a <a href="#" className="text-blue-400">free website</a></p>
+            <p>Powered by <span className="font-bold">UST</span> - Create a <a href="https://www.odoo.com/app/website?utm_source=db&utm_medium=website" className="text-blue-400">free website</a></p>
           </div>
         </div>
       </div>
