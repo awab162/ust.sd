@@ -43,17 +43,12 @@ const StudentInfo: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>15-03-2025</td>
-                <td>Service Fee/Training fees</td>
-                <td>AED</td>
-                <td>4,050.00</td>
-              </tr>
+              {/* All rows removed as requested */}
             </tbody>
             <tfoot>
               <tr>
                 <td colSpan={3} className="text-right font-semibold">AED Installment Total</td>
-                <td className="font-semibold">4,050.00</td>
+                <td className="font-semibold">0.00</td>
               </tr>
             </tfoot>
           </table>
