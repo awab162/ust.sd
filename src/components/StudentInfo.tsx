@@ -43,12 +43,35 @@ const StudentInfo: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              {/* No installments to display */}
+              <tr>
+                <td>15-01-2024</td>
+                <td>Service Fee/Training fees</td>
+                <td>AED</td>
+                <td>617.00</td>
+              </tr>
+              <tr>
+                <td>15-01-2024</td>
+                <td>Study Fee/Study Fees</td>
+                <td>AED</td>
+                <td>735.00</td>
+              </tr>
+              <tr>
+                <td>15-02-2024</td>
+                <td>Service Fee/Training fees</td>
+                <td>AED</td>
+                <td>4,050.00</td>
+              </tr>
+              <tr>
+                <td>15-03-2025</td>
+                <td>Service Fee/Training fees</td>
+                <td>AED</td>
+                <td>4,050.00</td>
+              </tr>
             </tbody>
             <tfoot>
               <tr>
                 <td colSpan={3} className="text-right font-semibold">AED Installment Total</td>
-                <td className="font-semibold">0.00</td>
+                <td className="font-semibold">9,452.00</td>
               </tr>
             </tfoot>
           </table>

@@ -10,8 +10,7 @@ const Header: React.FC = () => {
           <img 
             src="/lovable-uploads/15627a03-60be-4568-9308-4349823f8a3f.png" 
             alt="University Logo" 
-            className="h-12 w-auto mr-2 cursor-pointer" 
-            onClick={() => window.open('https://acs.ust.edu.sd/', '_blank', 'noopener,noreferrer')}
+            className="h-12 w-auto mr-2" 
           />
           <button className="rounded-md bg-blue-600 text-white px-3 py-1 text-sm">Contact Us</button>
         </div>
