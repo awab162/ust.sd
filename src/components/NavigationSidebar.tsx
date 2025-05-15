@@ -5,6 +5,8 @@ import {
   Drawer,
   DrawerTrigger,
   DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
 } from '@/components/ui/drawer';
 import { Button } from '@/components/ui/button';
 
@@ -21,6 +23,9 @@ const NavigationSidebar: React.FC = () => {
         </Button>
       </DrawerTrigger>
       <DrawerContent>
+        <DrawerHeader>
+          <DrawerTitle>Navigation</DrawerTitle>
+        </DrawerHeader>
         <div className="p-4 grid gap-4">
           <Button 
             variant="ghost" 
