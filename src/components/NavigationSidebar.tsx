@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, Contact, LogIn, List } from 'lucide-react';
+import { Home, Contact, LogIn } from 'lucide-react';
 import { 
   Sheet,
   SheetTrigger,
@@ -13,7 +13,11 @@ const NavigationSidebar: React.FC = () => {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="outline" size="sm" className="flex items-center justify-center">
-          <List size={18} />
+          <div className="flex flex-col gap-1">
+            <div className="h-0.5 w-5 bg-current"></div>
+            <div className="h-0.5 w-5 bg-current"></div>
+            <div className="h-0.5 w-5 bg-current"></div>
+          </div>
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-[250px]">

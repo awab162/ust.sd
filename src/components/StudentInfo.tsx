@@ -52,7 +52,7 @@ const StudentInfo: React.FC = () => {
             </tbody>
             <tfoot>
               <tr>
-                <td colSpan={3} className="text-right font-semibold">AED Installment Total</td>
+                <td colSpan={3} className="text-center font-semibold">AED Installment Total</td>
                 <td className="font-semibold">4,050.00</td>
               </tr>
             </tfoot>
