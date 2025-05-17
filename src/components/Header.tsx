@@ -13,7 +13,7 @@ const Header: React.FC = () => {
             rel="noopener noreferrer"
           >
             <img 
-              src="/lovable-uploads/15627a03-60be-4568-9308-4349823f8a3f.png" 
+              src="./lovable-uploads/15627a03-60be-4568-9308-4349823f8a3f.png" 
               alt="University Logo" 
               className="h-12 w-auto mr-2 cursor-pointer" 
             />
