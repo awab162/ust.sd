@@ -1,10 +1,10 @@
 
+import React, { Suspense, lazy } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
@@ -26,17 +26,26 @@ const ErrorFallback = () => (
   </div>
 );
 
-class ErrorBoundary extends React.Component {
-  constructor(props) {
+// Define props and state types for the ErrorBoundary component
+interface ErrorBoundaryProps {
+  children: React.ReactNode;
+}
+
+interface ErrorBoundaryState {
+  hasError: boolean;
+}
+
+class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  constructor(props: ErrorBoundaryProps) {
     super(props);
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
     console.error("Error caught by boundary:", error, errorInfo);
   }
 
