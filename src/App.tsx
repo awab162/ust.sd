@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 // Error boundary component
-const ErrorFallback = () => (
+const ErrorFallback: React.FC = () => (
   <div className="flex items-center justify-center min-h-screen bg-gray-50">
     <div className="p-8 bg-white rounded shadow-md">
       <h2 className="text-2xl font-bold text-red-600 mb-4">Something went wrong</h2>
@@ -49,7 +49,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
     console.error("Error caught by boundary:", error, errorInfo);
   }
 
-  render() {
+  render(): React.ReactNode {
     if (this.state.hasError) {
       return <ErrorFallback />;
     }
@@ -57,7 +57,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
   }
 }
 
-const App = () => (
+const App: React.FC = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
