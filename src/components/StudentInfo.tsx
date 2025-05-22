@@ -28,6 +28,9 @@ const StudentInfo: React.FC = () => {
           </div>
         </div>
       </div>
+      
+      {/* Empty space where installments table was previously located */}
+      <div className="mb-16 h-24"></div>
     </div>
   );
 };
