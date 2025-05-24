@@ -28,37 +28,6 @@ const StudentInfo: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      <div className="mb-8">
-        <h2 className="text-xl font-semibold mb-4">Installments to Pay:</h2>
-        
-        <div className="overflow-x-auto">
-          <table className="student-table">
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Service</th>
-                <th>Currency</th>
-                <th>Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>15-03-2025</td>
-                <td>Service Fee/Training fees</td>
-                <td>AED</td>
-                <td>4,050.00</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colSpan={3} className="text-center font-semibold">AED Installment Total</td>
-                <td className="font-semibold">4,050.00</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </div>
     </div>
   );
 };
