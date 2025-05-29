@@ -18,11 +18,11 @@ const StudentInfo: React.FC = () => {
         
         <div className="flex-grow">
           <div className="space-y-2">
-            <p><span className="font-semibold">Name:</span> اواب ابوبكرالصديق عباس اسماعيل</p>
+            <p><span className="font-semibold">Name:</span> رغد يوسف عثمان محمد</p>
             <p><span className="font-semibold">Program:</span> Medicine</p>
             <p><span className="font-semibold">Batch:</span> AB/0107/2020/MSSM</p>
             <p><span className="font-semibold">Level:</span> Four</p>
-            <p><span className="font-semibold">Student E-mail:</span> 2020mssmb0071@ust.edu.sd</p>
+            <p><span className="font-semibold">Student E-mail:</span> raghad.2020mssmb0031@ust.edu.sd</p>
             <p><span className="font-semibold">Location:</span> Egypt - Cairo</p>
             <p className="text-green-600 font-semibold">Allowed to enter.</p>
           </div>
