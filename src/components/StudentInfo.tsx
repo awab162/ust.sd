@@ -10,7 +10,7 @@ const StudentInfo: React.FC = () => {
       <div className="flex flex-col md:flex-row gap-6 mb-8">
         <div className="w-40 h-48 bg-gray-100 flex-shrink-0">
           <img 
-            src="./lovable-uploads/8c799d04-48e0-4401-9577-f415f3a74309.png" 
+            src="lovable-uploads/8c799d04-48e0-4401-9577-f415f3a74309.png" 
             alt="Student Photo" 
             className="w-full h-full object-cover"
           />
